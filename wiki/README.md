@@ -2,11 +2,11 @@
 _Camper Activty signup system._
 
 ### Links to documentation
-Link to WebUI Readme: https://github.com/Campstone/Webapp/blob/main/README.md
-  Link to Webui UserManual: https://github.com/Campstone/Webapp/blob/main/UserManual.md
+- Link to WebUI Readme: https://github.com/Campstone/Webapp/blob/main/README.md
+  - Link to WebUI UserManual: https://github.com/Campstone/Webapp/blob/main/UserManual.md
 
 
-Link to backend readme: https://github.com/Campstone/Database-API/blob/main/README.md
+- Link to backend readme: https://github.com/Campstone/Database-API/blob/main/README.md
 
 ## Requirements
 
@@ -210,4 +210,4 @@ Planned deliverables:
 - The first iteration of our system was not fast ennough and relied on counsollors handing papers and filling in the form in time.
 - Was only able to do 1 cabin at a time.
 - Solo development means you need to be very good independently as nobody is going to help you. Set key deadline to make sure you stay on track.
--   
+
