@@ -1,4 +1,12 @@
 # Camp Activity Sign-Up System – Capstone Project Wiki
+_Camper Activty signup system._
+
+### Links to documentation
+Link to WebUI Readme: https://github.com/Campstone/Webapp/blob/main/README.md
+  Link to Webui UserManual: https://github.com/Campstone/Webapp/blob/main/UserManual.md
+
+
+Link to backend readme: https://github.com/Campstone/Database-API/blob/main/README.md
 
 ## Requirements
 
@@ -58,6 +66,46 @@
 - Collected feedback for future improvements.
 
 > _Weekly meetings were also held with TA Omkar for guidance._
+---
+
+### 🗓️ Sep 20, 2025
+- Reviewed notes from camp
+- Reviewed what worked what didn't
+- Updated requirements
+- Gathered feedback
+- Change the way we saw the problem. Had to come up with a new soluition/statagy
+- Finished up the old implementation and any missing gaps it had.
+
+### 🗓️ Oct 5, 2025
+- Brainstomed and pitched a new solution
+- Addressed concerns about camper data safety
+- Needed to be revised.
+- Started working on backend and frontend updates based off feedback.
+
+### 🗓️ Oct 18, 2025
+- Came up with a fix for concernacy based off ticketmaster and flightbooking system. No webhooks to keep it as offline as possible
+- Stared working on the backend to implement these changes. Making new API endpoints and functions to keep funciallity with old cabin signup system.
+- Looked into PWA (Progressive webapps) but realized that wont work with NFC tags on iOS
+- Kept it as website.
+- Did a code freeze and started to work on testing.
+
+### 🗓️ Nov 2, 2025
+- Started working on the Frontend to link to the new backend API endpoints.
+- Decided to go with a QR codes instead of NFC tags as it would be easiler to implement and cheaper.
+- Updated the backend accordingly.
+- Updated the frontend 
+
+### 🗓️ Nov 15, 2025
+- Finilized the frontend and backend.
+- Did some bug fixes.
+
+### 🗓️ Nov 29, 2025
+- Showed the full app to the client working UI with working database & api.
+- Ensured conpatibility with mutiple devices at one time.
+- Did the final presetation to the client.
+- Optimized system performance.
+
+> _Biweekly meetings were also held with TA Paul M for guidance._
 
 ---
 
@@ -140,3 +188,26 @@ Planned deliverables:
 ### 🛠️ Architecture & Tools
 
 <img src="image-7.png" alt="System Architecture" width="800"/>
+
+### Final Achievements
+ - Fully implemented a system that the camp can use to support 300+ campers
+ - Revised the version after a real world implementation getting real feedback and modified what needs to change and what needs to improve.
+ - Added concurrency allowing multiple campers to signup to activites at once.
+ - Test diffrent senarios and made sure the app supports diffrent senarios it wasn't designed for, example if a camper has already submited there activites and decided to scan their qr code again.
+ - Fully Offline so no internet is required to run this applicaiton.
+ - Fully Mobile friendly
+ - Drak mode for late night entires
+ - Easy to use UI for campers and simple for counsollors and staff.
+ - Implemented a timer to keep operations fast and campers moving.
+ - Adding a new session/cabin/camper/activity... Anything! is super easy via the django admin page and no updates need to be done to the UI it will automaticlly be adjusted based off the backend.
+
+### Deployment and Handover Plans
+- I will be at camp and implementing it myself. If not I will set everything up remotly and be avalible as needed.
+- Setup is really easy though all that you need to do is run the webui by doing `yarn run build` followed my `yarn run preview --host` and for the django backend `python3 manage.py runserver 0.0.0.0:8000`
+- Having the database hosted and not using sql lite but postgress would be a better idea and probabily the only change you would have to do.
+  
+### Lessons Learned
+- The first iteration of our system was not fast ennough and relied on counsollors handing papers and filling in the form in time.
+- Was only able to do 1 cabin at a time.
+- Solo development means you need to be very good independently as nobody is going to help you. Set key deadline to make sure you stay on track.
+-   
